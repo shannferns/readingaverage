@@ -1,0 +1,176 @@
+<html>
+<head>
+  <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script>
+var a = 12
+function fn1(){
+  var x = document.getElementById('read').value;
+  var y = (((x - 12)/ 12)*100);
+  var z = y.toFixed(0);
+  document.getElementById('percentage').innerHTML = z;
+  return false;
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+body {
+background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.rectangle {
+  background-color: rgba(38, 38, 38, 0.5);
+  width: 60%;
+  height: 65%;
+  margin: 20em;
+  opacity: 0.9;
+  margin-top: 8em;
+
+}
+
+.textbox {
+  background-color: rgba(38, 38, 38, 0.5);
+  width: 60%;
+  height: 30%;
+  margin: 20em;
+  margin-bottom: 2em;
+  opacity: 0.6;
+  margin-top: 8em;
+
+}
+
+
+
+
+input {
+  width: 30em;
+    height: 7em;
+  border: 5px white;
+  border-radius: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin: 5em;
+  margin-top: 2em;
+  margin-bottom: 0.2em;
+  opacity: 1;
+  font-size: 18;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1 {
+  display: inline;
+  margin-bottom: 1em;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 50;
+}
+
+p {
+  display: inline;
+  color: black;
+  margin-bottom: 1em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 50;
+}
+
+.text {
+  color: black;
+  margin: 2em;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20;
+
+}
+.h1n {
+  display:inline;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .rectangle {
+    margin: 2em;
+    margin-left: 1em;
+    margin-top: 3em;
+    width: 85%;
+    height: 65%;
+
+  }
+
+  input {
+    border: 5px white;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 1em;
+    margin-top: 3em;
+    /* margin-left: 2em; */
+    /* margin-right: 2em;
+    margin-bottom: 1em; */
+    opacity: 1;
+    font-size: 7;
+    padding: 2em;
+  }
+
+
+  h1 {
+    display: inline;
+    margin-bottom: 1em;
+    color: white;
+  font-size: 50;
+  }
+
+  p {
+    display: inline;
+    color: black;
+    margin-bottom: 1em;
+  font-size: 50;
+  }
+  .h1n {
+  margin: 2em;
+
+  }
+
+}
+
+
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1"> Average Reader Comparison</span>
+  </nav>
+<br>
+<br>
+<br>
+<!-- <div class="textbox">
+<p class="text"> The Average Reader Reads 12 books a year, use this calculator to see to what extent you surpass the average reader </p>
+</div> -->
+<div class="rectangle">
+<center>
+<input id="read" placeholder="How Many Books Do You Read?">
+<br>
+<br>
+<button onclick = "fn1()" id="button1" class="btn btn-primary">
+Submit
+</button>
+<br>
+<br>
+<div class ="h1n">
+<h1> You have read <p id="percentage"> 0 </p> % books more than the average individual </h1>
+</div>
+</div>
+</center>
+</body>
